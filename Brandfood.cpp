@@ -16,7 +16,7 @@ void Brandf::WritetoCons() {
 
 	//cout << "------Brand food------ " << endl;
 
-	cout << "Cafe: " << cafe << " \nBrand food: " << brfood << endl;
+	cout << "Cafe: " << cafe << " \n food: " << brfood << endl;
 	cout << "Price: " << price << endl;
 
 
