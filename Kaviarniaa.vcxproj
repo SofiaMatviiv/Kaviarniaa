@@ -26,13 +26,13 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -138,21 +138,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaristaRepository.cpp" />
     <ClCompile Include="Brandfood.cpp" />
+    <ClCompile Include="BrandfoodRepository.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="Customer.cpp" />
+    <ClCompile Include="CustomerRepository.cpp" />
     <ClCompile Include="Human.cpp" />
+    <ClCompile Include="HumanRepository.cpp" />
     <ClCompile Include="Kaviarnia.cpp" />
-    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="KaviarniaRepository.cpp" />
+    <ClCompile Include="Repository.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Barista.h" />
+    <ClInclude Include="BaristaRepository.h" />
     <ClInclude Include="Brandfood.h" />
+    <ClInclude Include="BrandfoodRepository.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="Customer.h" />
+    <ClInclude Include="CustomerRepository.h" />
     <ClInclude Include="Deliverler.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="Human.h" />
+    <ClInclude Include="HumanRepository.h" />
     <ClInclude Include="Kaviarnia.h" />
+    <ClInclude Include="KaviarniaRepository.h" />
+    <ClInclude Include="Repository.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

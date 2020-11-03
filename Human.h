@@ -2,18 +2,17 @@
 #define HUMAN_H
 #include <iostream>
 #include <string>
+#include "Entity.h"
 using namespace std;
 
 
-class Human {
-protected:
+class Human :public Entity
+{
+public:
 	string FirstName;
 	string SecondName;
+	Human(string FirstName, string SecondName);
 
-public:
-	Human();
-	virtual void Information(string FirstName, string SecondName);
-	virtual void WritetoCons();
 };
 
 

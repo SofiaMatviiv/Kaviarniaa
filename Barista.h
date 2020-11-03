@@ -9,18 +9,20 @@ class Barista : public Human
 	string work;
 public:
 	int mark;
-	void Information(string work, string FirstName, string SecondName, int mark) {
+	Barista(string work=" ", string FirstName=" ", string SecondName=" ", int mark=0):Human(FirstName,SecondName) {
 		this->work = work;
-		this->FirstName = FirstName;
-		this->SecondName = SecondName;
 		this->mark = mark;
 
 	}
+	string StrData() {
+		return work + " " + FirstName + " " + SecondName + " " + to_string(mark) + "\n";
+	}
+
 
 
 	void WritetoCons() {
 
-		cout << "Cafe: " << work << "\nFirst name: " << FirstName << " \nSecond Name: " << SecondName << " " << "\nRating: " << mark << endl;
+		cout << "Process of work: " << work << "\nFirst name: " << FirstName << " \nSecond Name: " << SecondName << " " << "\nRating: " << mark << endl;
 	};
 };
 #endif // !BARISTA_H

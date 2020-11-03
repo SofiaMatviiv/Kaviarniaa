@@ -1,25 +1,25 @@
 #include "Brandfood.h"
-#include "Command.h"
 #include <iostream>
-using namespace std;
+Brandfood::Brandfood(string nazva, int price, int rate, string root):Kaviarnia(nazva,price,rate) {
 
-void Brandf::InfBrandfood(string cafe, string brfood, int price) {
-
-	this->cafe = cafe;
-	this->brfood = brfood;
-	this->price = price;
+	this->root = root;
 
 
 }
 
-void Brandf::WritetoCons() {
+void Brandfood::WritetoCons() {
 
 	//cout << "------Brand food------ " << endl;
 
-	cout << "Cafe: " << cafe << " \nBrand food: " << brfood << endl;
+	cout << "Name: " << nazva<< " \nRating: " << rate <<"\nRoot:"<<root<< endl;
 	cout << "Price: " << price << endl;
 
 
 
 
+}
+
+string Brandfood::StrData()
+{
+	return nazva + " " + to_string(price) + " " + root + " " + to_string(rate) + " " + "\n";
 }

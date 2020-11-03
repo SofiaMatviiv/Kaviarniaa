@@ -1,17 +1,14 @@
 #ifndef BRANDFOOD_H
 #define BRANDFOOD_H
-
 #include "Kaviarnia.h"
 #include <string>
 using namespace std;
-class Brandf {
-	string brfood;
-	string cafe;
-
-	int price;
+class Brandfood:public Kaviarnia {
+	string root;
 public:
-	void InfBrandfood(string cafe, string brfood, int price);
+	Brandfood(string nazva, int price, int rate, string root);
 	void WritetoCons();
+	string StrData();
 
 };
 #endif

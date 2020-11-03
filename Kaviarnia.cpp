@@ -1,18 +1,20 @@
 #include "Kaviarnia.h"
-#include"Command.h"
 #include<iostream>
 //Kaviarnia::Kaviarnia() {};
-void Kaviarnia::InfKaviarnia(string nazva, string address, int avprice, int rate) {
+Kaviarnia::Kaviarnia(string nazva, int price, int rate) {
 
 	this->nazva = nazva;
-	this->address = address;
-	this->avprice = avprice;
+	this->price = price;
 	this->rate = rate;
 
 }
 
 void Kaviarnia::WritetoCons() {
 
-	cout << "Name:" << nazva << "\nAddress:" << address << "\nAvarage price of an offer:" << avprice << "\nRating:" << rate << endl;
+	cout << "Name:" << nazva << "\nAvarage price of an offer:" << price << "\nRating:" << rate << endl;
 
+}
+
+string Kaviarnia::StrData(){
+	return nazva+ to_string(price) +to_string(rate)+ "\n";
 }

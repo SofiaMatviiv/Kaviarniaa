@@ -9,16 +9,16 @@ class Deliverler : public Human
 
 public:
 	int maxtime;
-	void Information(string FirstName, string SecondName, int maxtime) {
+	Deliverler(string FirstName, string SecondName, int maxtime):Human(FirstName,SecondName){
 
-		this->FirstName = FirstName;
-		this->SecondName = SecondName;
 		this->maxtime = maxtime;
 	};
+	string StrData() {
+		return FirstName + " " + SecondName + " " + to_string(maxtime) + " " + "\n";
+	}
 
 
 	void WritetoCons() {
-		cout << "-----Information about deliverler:------" << endl;
 		cout << "First name: " << FirstName << " \nSecond Name: " << SecondName << " " << "\nMax time of waiting an offer: " << maxtime << endl;
 	};
 };

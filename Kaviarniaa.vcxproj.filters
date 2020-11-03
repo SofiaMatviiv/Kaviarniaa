@@ -13,11 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Repository">
+      <UniqueIdentifier>{d5a385f6-fc4f-47da-935f-21bee1e45cbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{0e832c7c-99ec-437b-8128-88d4d1fe9cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Repositories">
+      <UniqueIdentifier>{1872cc46-9736-49f7-8237-a5dccc144d15}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Brandfood.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -30,31 +36,70 @@
     <ClCompile Include="Human.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Repository.cpp">
+      <Filter>Source Files\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="HumanRepository.cpp">
+      <Filter>Source Files\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="KaviarniaRepository.cpp">
+      <Filter>Source Files\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="BaristaRepository.cpp">
+      <Filter>Source Files\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomerRepository.cpp">
+      <Filter>Source Files\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="BrandfoodRepository.cpp">
+      <Filter>Source Files\Repository</Filter>
+    </ClCompile>
     <ClCompile Include="Kaviarnia.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Barista.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Human.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Brandfood.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Command.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Customer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Barista.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Brandfood.h">
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
     <ClInclude Include="Deliverler.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Human.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
     <ClInclude Include="Kaviarnia.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Customer.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="HumanRepository.h">
+      <Filter>Header Files\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="KaviarniaRepository.h">
+      <Filter>Header Files\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="Repository.h">
+      <Filter>Header Files\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="BaristaRepository.h">
+      <Filter>Header Files\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomerRepository.h">
+      <Filter>Header Files\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="BrandfoodRepository.h">
+      <Filter>Header Files\Repositories</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
