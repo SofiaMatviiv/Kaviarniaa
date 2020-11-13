@@ -23,13 +23,16 @@ public:
 	CustomerRepository cr = CustomerRepository(true);
 	BrandfoodRepository brfd = BrandfoodRepository(true);
 	vector<Brandfood>caf;
-	void Rating();
+	void MaxRating();
 	void ChangeRating();
 
 	void AddBarista(Barista& barista);
 
 
 	void AddDeliverler(Deliverler& deliver);
+	void AddCustomer(Customer& customer);
+
+	void AddBrandfood(Brandfood& brandfood);
 
 
 	void ShowAll(string all);

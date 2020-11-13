@@ -3,13 +3,13 @@
 #include "Entity.h"
 #include <vector>
 #include<fstream>
-
-class Repository
+ 
+class Repository:public Entity
 {
 protected:
 	bool sync;
-	bool Add(Entity*);
-	vector< Entity*>en;
+	bool Add(Entity*);//bool Add(T& t);
+	vector< Entity*>en;//vector< T*>tnt;
 
 
 public:
@@ -20,4 +20,30 @@ public:
 	Repository(bool sync = false);
 	~Repository();
 };
+
+
+bool Repository::Add(Entity* d)
+{
+	en.push_back(d);
+	if (sync) {
+		WriteToFile();
+	}
+	return true;
+}
+
+vector<Entity*> Repository::enti()
+{
+	return en;
+}
+
+Repository::Repository(bool sync)
+{
+	this->sync = sync;
+
+
+}
+
+Repository::~Repository() {
+	//WriteToStorage();
+}
 #endif

@@ -15,6 +15,17 @@ void Command::AddDeliverler(Deliverler& deliver)
 {
     hr.Add(deliver);
 }
+void Command::AddCustomer(Customer& customer)
+{
+    cr.Add(customer);
+}
+
+
+
+void Command::AddBrandfood(Brandfood& brandfood)
+{
+    brfd.Add(brandfood);
+}
 
 
 void Command::ShowAll(string all)
@@ -41,7 +52,7 @@ void Command::ShowAll(string all)
         }
     }
 }
-void Command::Rating() {
+void Command::MaxRating() {
     int max = caf[0].rate;
     int ind = 0;
     for (int i = 1; i < caf.size(); i++) {
@@ -56,7 +67,21 @@ void Command::Rating() {
     caf[ind].WritetoCons();
     cout << endl;
 }
-
+void Command::ChangeRating()
+{
+    cout << "Enter the name which rating you want to change : " << endl;
+    int rating;
+    string name;
+    cin >> name;
+    for (int i = 0; i < caf.size(); i++) {
+        if (caf[i].nazva == name) {
+            cout << "Your mark from 1-5: " << endl;
+            cin >> rating;
+            caf[i].rate = rating;
+            break;
+        }
+    }
+}
 //void Command::KaviarniaFile() {
 //    KaviarniaRepository kr;
 //    kr.ReadFromStorage();
