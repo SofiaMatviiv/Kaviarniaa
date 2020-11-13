@@ -1,0 +1,10 @@
+﻿  CommandUs.cpp
+D:\програмування\навчальна практика 2020\Kaviarnia1\KaviarniaUser\CommandUs.cpp(11,26): warning C4018: '<': signed/unsigned mismatch
+D:\програмування\навчальна практика 2020\Kaviarnia1\KaviarniaUser\CommandUs.cpp(16,26): warning C4018: '<': signed/unsigned mismatch
+D:\програмування\навчальна практика 2020\Kaviarnia1\KaviarniaUser\CommandUs.cpp(21,26): warning C4018: '<': signed/unsigned mismatch
+  SourseUser.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 358 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  KaviarniaUser.vcxproj -> D:\програмування\навчальна практика 2020\Kaviarnia1\Kaviarniaa\Release\KaviarniaUser.exe
